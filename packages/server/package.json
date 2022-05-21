@@ -4,7 +4,8 @@
   "description": "procbox server package.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "rollup -c"
   },
   "keywords": [
     "procbox"
