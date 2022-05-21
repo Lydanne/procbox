@@ -1,0 +1,18 @@
+{
+  "name": "procbox",
+  "version": "0.0.0",
+  "description": "a node process manager tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "pm2",
+    "process",
+    "proxy"
+  ],
+  "author": "wmc",
+  "license": "ISC",
+  "devDependencies": {}
+}

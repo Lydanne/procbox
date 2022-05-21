@@ -1,0 +1,31 @@
+{
+  "name": "@procbox/cli",
+  "version": "0.0.0",
+  "description": "procbox cli package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "cli",
+    "procbox"
+  ],
+  "author": "wmc",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@types/jest": "^27.5.1",
+    "core": "link:packages/core",
+    "jest": "^28.1.0",
+    "rollup": "^2.74.1",
+    "server": "link:packages/server",
+    "shared": "link:packages/shared",
+    "ts": "^0.2.2",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
