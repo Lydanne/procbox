@@ -2,10 +2,13 @@
   "name": "@procbox/shared",
   "version": "0.0.0",
   "description": "procbox shared package.",
-  "main": "index.js",
+  "main": "dist/procbox.cjs.js",
+  "module": "dist/procbox.esm.js",
+  "types": "src/index.ts",
   "scripts": {
     "test": "jest",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "init": "mikro-orm schema:update -r"
   },
   "keywords": [
     "procbox"

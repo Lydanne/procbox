@@ -1,12 +1,15 @@
 import http from "http";
 import httpProxy from "http-proxy";
+// import defaultConfig from "@/config";
 
-const proxy = httpProxy.createProxyServer({});
+export function createGatewayService(config: any) {
+  const proxy = httpProxy.createProxyServer({});
 
-http
-  .createServer((req, res) => {
-    proxy.web(req, res, {
-      target: "http://localhost:3000",
-    });
-  })
-  .listen(3000);
+  return http
+    .createServer((req, res) => {
+      proxy.web(req, res, {
+        target: "http://localhost:3000",
+      });
+    })
+    .listen(config.port);
+}
